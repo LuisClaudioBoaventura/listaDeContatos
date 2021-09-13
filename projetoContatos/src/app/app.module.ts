@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContatoFormComponent } from './contato-form/contato-form.component';
 import {FormsModule} from '@angular/forms'
-import {LocalStorageModule} from 'angular-2-local-storage'
+import {LocalStorageModule} from 'angular-2-local-storage';
+import { ContatoListComponent } from './contato-list/contato-list.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContatoFormComponent
+    ContatoFormComponent,
+    ContatoListComponent
   ],
   imports: [
     BrowserModule,
