@@ -1,0 +1,22 @@
+<table class="table table-striped ">
+  <tr class="table-sm ">
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>Email</th>
+    <th>Ações</th>
+  </tr>
+
+  <tr *ngFor="let contato of contatos" >
+    <th class= "mb-5">{{ contato.nome }}</th>
+    <td>{{ contato.telefone }}</td>
+    <td>{{ contato.email }}</td>
+    <td class = "d-flex">
+      <button type = "button"  class="btn btn-primary" (click)="edit(contato)">
+        <i class="bi bi-pencil-square"></i>
+      </button>
+      <button class="btn btn-danger" (click)="delete(contato)">
+        <i class="bi bi-trash-fill"></i>
+      </button>
+    </td>
+  </tr>
+</table>
